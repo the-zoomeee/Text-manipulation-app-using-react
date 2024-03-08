@@ -1,29 +1,54 @@
 import './App.css';
-import AppForm from './components/AppForm';
+import AppForm from './pages/Home';
 import Navbar from './components/Navbar';
-import React, {useState} from 'react'
+import Alert from './components/Alert';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [Mode, setMode] = useState('light');
+  const [mode, setMode] = useState('light');
+  const [alert, setAlert] = useState(null);
 
-  const toggleMode = ()=> {
-    if (Mode === "light") {
+  const showAlert = (message, type) => {
+    setAlert({
+      msg: message,
+      type: type
+    });
+    setTimeout(() => {
+      setAlert(null);
+    }, 2000);
+  };
+
+  const toggleMode = () => {
+    if (mode === "light") {
       setMode("dark");
       document.body.style.backgroundColor = "#020f18";
-    }
-    else
-    {
+      showAlert("Dark mode has been enabled", "success");
+    } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
+      showAlert("Light mode has been enabled", "success");
     }
-  }
+  };
 
   return (
     <>
-    <Navbar title="Text Utils" mode = {Mode} changeMode = {toggleMode} />
-    <div className='container'>
-    <AppForm heading="Enter the text to analyze below" mode = {Mode}/>
-    </div>
+      <Router>
+        <Navbar title="Text Utils" mode={mode} changeMode={toggleMode} />
+        <Alert alert={alert} />
+        <div className='container'>
+          <Routes>
+            <Route path="/about" element={<About mode={mode} />} />
+            <Route path="/contact" element={<Contact mode={mode} />} />
+            <Route path="/text-utils" element={<AppForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
+            <Route path="/home" element={<AppForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+      </Router>
     </>
   );
 }

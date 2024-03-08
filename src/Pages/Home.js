@@ -2,19 +2,30 @@ import React, {useState} from 'react'
 
 
 export default function AppForm(props) {
-    const [Text, setText] = useState("Enter text hear...");
+    const [Text, setText] = useState("Enter the text here...");
 
     const clear = ()=> {
         setText("");
+        props.showAlert("Text cleared", "danger");
     }
 
     const copy = ()=> {
         navigator.clipboard.writeText(Text);
+        if (Text === "")
+        {
+            props.showAlert("Please enter some text", "warning");
+        }
+        else
+        {
+            props.showAlert("Text copied", "success");
+        }
     }
 
     const paste = async ()=> {
         let newText = await navigator.clipboard.readText();
-        setText(newText);
+        let writeText = Text;
+        writeText = writeText + newText;
+        setText(writeText);
     }
 
 
@@ -24,17 +35,41 @@ export default function AppForm(props) {
     const toUpperCase = ()=> {
         let newText = Text.toUpperCase();
         setText(newText);
+        if (Text === "")
+        {
+            props.showAlert("Please enter some text", "warning");
+        }
+        else
+        {
+            props.showAlert("Text converted to uppercase", "success");
+        }
     }
 
     const toLowerCase = ()=> {
         let newText = Text.toLowerCase();
         setText(newText);
+        if (Text === "")
+        {
+            props.showAlert("Please enter some text", "warning");
+        }
+        else
+        {
+            props.showAlert("Text converted to lowercase", "success");
+        }
     }
 
     const removeExtraSpaces = ()=> {
         let newText = Text.split(/[ ]+/);
         newText = newText.join(" ");
         setText(newText.trim());
+        if (Text === "")
+        {
+            props.showAlert("Please enter some text", "warning");
+        }
+        else
+        {
+            props.showAlert("Extra spaces removed", "success");
+        }
     }
 
 
@@ -56,8 +91,9 @@ export default function AppForm(props) {
         if (Text === "")
             return 0;
         else
-            return text.trim().split(/\s+/).length
+            return text.trim().split(/\s+/).filter((element)=> {return element.length !== 0}).length
     }
+    document.title = "Text Utils - Home";
   return (
     <>
         <div className='container' style={{color: props.mode === 'light' ? 'black' : 'white'}}> 
