@@ -37,13 +37,13 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar title="Text Utils" mode={mode} changeMode={toggleMode} />
+        <Navbar title="TextChef" mode={mode} changeMode={toggleMode} />
         <Alert alert={alert} />
         <div className='container'>
           <Routes>
             <Route path="/about" element={<About mode={mode} />} />
             <Route path="/contact" element={<Contact mode={mode} />} />
-            <Route path="/text-utils" element={<AppForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
+            <Route path="/textChef" element={<AppForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
             <Route path="/home" element={<AppForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

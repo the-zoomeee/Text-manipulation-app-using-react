@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function About(props) {
-    document.title = "Text Utils - About Us";
+    document.title = "TextChef - About Us";
   return (
     <div>
         <div className="container my-5" style={{color: props.mode === 'light' ? 'black' : 'white'}}>

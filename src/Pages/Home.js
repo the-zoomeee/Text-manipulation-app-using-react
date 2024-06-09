@@ -93,7 +93,7 @@ export default function AppForm(props) {
         else
             return text.trim().split(/\s+/).filter((element)=> {return element.length !== 0}).length
     }
-    document.title = "Text Utils - Home";
+    document.title = "TextChef - Home";
   return (
     <>
         <div className='container' style={{color: props.mode === 'light' ? 'black' : 'white'}}> 

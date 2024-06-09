@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Contact(props) {
-    document.title = "Text Utils - Contact Us";
+    document.title = "TextChef - Contact Us";
   return (
     <div className="container my-5" style={{color: props.mode === 'light' ? 'black' : 'white'}}>
         <h1 align ="center">Contact Us</h1>
