@@ -48,3 +48,37 @@ To get a local copy up and running, follow these steps:
    ```sh
    npm start
 
+### Usage
+
+1. Open the app in your browser (usually at http://localhost:3000).
+2. Enter the name of a city in the input field.
+3. Click the "Search" button to fetch and display the weather data for the entered city.
+
+### Project Structure
+
+weather-app/
+│
+├── public/
+│   ├── index.html
+│   └── ...
+│
+├── src/
+│   ├── App.js
+│   ├── Weather.js
+│   ├── Weather.css
+│   └── index.js
+│
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
+
+### Built With
+
+- React - A JavaScript library for building user interfaces
+- Axios - Promise-based HTTP client for the browser and Node.js
+- OpenWeatherMap API - Weather data API
+
+### Contributing
+
+> Contributions are welcome! Please open an issue or submit a pull request for any bugs, enhancements, or features.
