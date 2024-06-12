@@ -25,12 +25,12 @@ TextChef is a simple text manipulation tool built using React. It allows users t
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/TextChef.git
+    git clone https://github.com/the-zoomeee/Text-manipulation-app-using-react.git
     ```
 
 2. Navigate to the project directory:
     ```sh
-    cd TextChef
+    cd Text-manipulation-app-using-react
     ```
 
 3. Install dependencies:
@@ -79,6 +79,3 @@ Located in `src/pages/NotFound.js`
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
