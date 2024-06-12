@@ -56,22 +56,22 @@ To get a local copy up and running, follow these steps:
 
 ### Project Structure
 
-> weather-app/
-> │
-> ├── public/
-> │   ├── index.html
-> │   └── ...
-> │
-> ├── src/
-> │   ├── App.js
-> │   ├── Weather.js
-> │   ├── Weather.css
-> │   └── index.js
-> │
-> ├── .env
-> ├── .gitignore
-> ├── package.json
-> └── README.md
+> weather-app/ <br>
+> │<br>
+> ├── public/<br>
+> │   ├── index.html<br>
+> │   └── ...<br>
+> │<br>
+> ├── src/<br>
+> │   ├── App.js<br>
+> │   ├── Weather.js<br>
+> │   ├── Weather.css<br>
+> │   └── index.js<br>
+> │<br>
+> ├── .env<br>
+> ├── .gitignore<br>
+> ├── package.json<br>
+> └── README.md<br>
 
 ### Built With
 
@@ -81,5 +81,5 @@ To get a local copy up and running, follow these steps:
 
 ### Contributing
 
-> [!NOTE]
+> [!Tip]
 > Contributions are welcome! Please open an issue or submit a pull request for any bugs, enhancements, or features.
