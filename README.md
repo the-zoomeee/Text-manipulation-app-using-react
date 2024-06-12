@@ -56,6 +56,7 @@ To get a local copy up and running, follow these steps:
 
 ### Project Structure
 
+> [!IMPORTANT]
 > weather-app/ <br>
 > │<br>
 > ├── public/<br>
