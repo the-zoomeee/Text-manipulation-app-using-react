@@ -2,24 +2,6 @@
 
 TextChef is a simple text manipulation tool built using React. It allows users to perform various operations on text such as clearing, copying, pasting, converting to uppercase or lowercase, and removing extra spaces. Additionally, it provides a summary of the text including the number of lines, words, and characters.
 
-## Demo
-#### Home
-![textChefHome](https://github.com/the-zoomeee/Text-manipulation-app-using-react/assets/154297263/e170405b-abfe-4527-b26a-c732769b5a50)
-
-#### About
-![textChefAbout](https://github.com/the-zoomeee/Text-manipulation-app-using-react/assets/154297263/901aea7d-3c2a-439a-9cb4-99e525ddd721)
-
-#### Contact Us
-![textChefContact Us](https://github.com/the-zoomeee/Text-manipulation-app-using-react/assets/154297263/73eeb699-8792-487e-8298-06272c73c7b5)
-
-#### Want to see TextChef in action? Check out our live demo here:
-
-🌐 **[TextChef Demo](https://the-zoomeee.github.io/textChef/)** 🌐
-
-Explore the full functionality of TextChef and experience seamless text manipulation!
-
-
-
 ## Table of Contents
 - [Features](#features)
 - [Installation](#installation)
@@ -27,7 +9,7 @@ Explore the full functionality of TextChef and experience seamless text manipula
 - [Components](#components)
 - [Pages](#pages)
 - [Contributing](#contributing)
-- [License](#license)
+- [License](#Demo)
 
 ## Features
 - **Clear**: Clears the text input.
@@ -97,3 +79,19 @@ Located in `src/pages/NotFound.js`
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## Demo
+#### Home
+![textChefHome](https://github.com/the-zoomeee/Text-manipulation-app-using-react/assets/154297263/e170405b-abfe-4527-b26a-c732769b5a50)
+
+#### About
+![textChefAbout](https://github.com/the-zoomeee/Text-manipulation-app-using-react/assets/154297263/901aea7d-3c2a-439a-9cb4-99e525ddd721)
+
+#### Contact Us
+![textChefContact Us](https://github.com/the-zoomeee/Text-manipulation-app-using-react/assets/154297263/73eeb699-8792-487e-8298-06272c73c7b5)
+
+#### Want to see TextChef in action? Check out our live demo here:
+
+🌐 **[TextChef Demo](https://the-zoomeee.github.io/textChef/)** 🌐
+
+Explore the full functionality of TextChef and experience seamless text manipulation!
