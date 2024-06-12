@@ -18,8 +18,8 @@ To get a local copy up and running, follow these steps:
 
 ### Prerequisites
 
-- Node.js (>= 14.x)
-- npm (>= 6.x)
+- Node.js 
+- npm 
 
 ### Installation
 
@@ -27,3 +27,24 @@ To get a local copy up and running, follow these steps:
 
    ```sh
    git clone https://github.com/your-username/weather-app.git
+
+2. Navigate to the project directory
+
+   ```sh
+   cd weather-app
+
+3. Install the dependencies
+
+   ```sh
+   npm install
+
+4. Create a .env file in the root of the project and add your OpenWeatherMap API key
+
+   ```sh
+   REACT_APP_API_KEY=your_openweathermap_api_key
+
+5. Start the development server
+
+   ```sh
+   npm start
+
