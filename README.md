@@ -9,7 +9,8 @@ TextChef is a simple text manipulation tool built using React. It allows users t
 - [Components](#components)
 - [Pages](#pages)
 - [Contributing](#contributing)
-- [License](#Demo)
+- [Demo](#Demo)
+- [Website](#Website)
 
 ## Features
 - **Clear**: Clears the text input.
@@ -90,6 +91,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 #### Contact Us
 ![textChefContact Us](https://github.com/the-zoomeee/Text-manipulation-app-using-react/assets/154297263/73eeb699-8792-487e-8298-06272c73c7b5)
 
+## Website
 #### Want to see TextChef in action? Check out our live demo here:
 
 🌐 **[TextChef Demo](https://the-zoomeee.github.io/textChef/)** 🌐
