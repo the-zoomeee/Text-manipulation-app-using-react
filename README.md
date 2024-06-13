@@ -95,6 +95,6 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 #### Want to see TextChef in action? Check out our live demo here:
 
 > [!Tip]
-> 🌐 **[TextChef Demo](https://the-zoomeee.github.io/textChef/)** 🌐
+> 🚀 **[Experience TextChef Live](https://the-zoomeee.github.io/textChef/)** 🚀
 
 Explore the full functionality of TextChef and experience seamless text manipulation!
